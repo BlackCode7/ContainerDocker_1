@@ -1,0 +1,37 @@
+instalação node 18 =>  https://techviewleo.com/how-to-install-node-js-18-lts-on-ubuntu/
+1) - sudo apt update && sudo apt upgrade
+2) - curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
+3) - sudo apt-get install nodejs
+4) - node -v
+5) - npm -v - versão do npm
+6) - atualizando npm => npm install -g npm@9.2.0
+
+instalando angular 13
+1) - npm i -g @angular/cli@13.0.0 --save
+2) - ng --version
+
+instalação do java => https://linuxhint.com/install-java-ubuntu-22-04/
+1) - sudo apt update
+2) - sudo apt install -y openjdk-17-jdk  =  sudo apt uninstall -y openjdk-17-jdk
+3) - sudo apt install -y openjdk-17-jre
+4) - sudo apt update
+
+    - Configurando variavel de ambiente para java -
+        $ cat <<EOF | sudo tee /etc/profile.d/jdk18.sh
+            > export JAVA_HOME=/usr/lib/jvm/jdk-18
+            > export PATH=\$PATH:\$JAVA_HOME/bin
+            > EOF
+5) -  source /etc/profile.d/jdk18.sh
+
+
+EXECUTANDO DOCKERFILE
+1) - docker build -t "nome-da-aplicação"  =>  docker build -t upload-file-backend .  => NÃO PODE TER LETRAS MAIÚSCULAS
+
+
+
+
+
+
+
+
+
