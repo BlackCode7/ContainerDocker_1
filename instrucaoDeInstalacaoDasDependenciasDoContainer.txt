@@ -1,3 +1,40 @@
+uso customizado do typescript - extensõefa
+
+Settings
+genGetSet.scoped (default: enabled) Only show private variables from current class based on cursor position.
+genGetSet.filter (default: enabled) Only show private variables which do not have a getter/setter method.
+genGetSet.importTypings (default: enabled) Create import lines based on definition files from /typings/.
+genGetSet.importNode (default: enabled) Create import lines based on definition files from /node_modules/.
+genGetSet.classic (default: disabled) use 'getValue' and 'setValue' instead of 'get value' and 'set value'.
+genGetSet.pathStringDelimiter (default: ') sets which quote use to generate import path.
+genGetSet.spacedImportLine (default: false) Adds spaces between the beginning and ending of the brackets in an import line.
+genGetSet.scanOnSave (default: false) Scan the workspace for imports when a document is saved.
+genGetSet.ignoredImportList (check settings) Imports like 'Promise' have many libraries but seldom need an import line.
+genGetSet.ignoredDictionaryList (check settings) Dictionaries like 'vscode' and 'tsconfig' which do not need an import line.
+genGetSet.ignoredLibraryPaths (check settings) Paths like 'dist' and 'src' which can be omitted in the import line.
+genGetSet.ignoredNodeLibraries (check settings) A list of node module libraries like 'chrome' and 'node' which can be ignored as an import line.
+
+Usage
+
+ctrl+shift+c ===> constructor
+ctrl+shift+s ===> set
+
+Just place your cursor within a TypeScript class definition in the text editor window
+Open the command palette ctrl+shift+P / cmd+shift+P.
+Search for 'Import', 'Generate Getter', 'Setter' or 'Constructor'
+or
+
+Just place your cursor within a TypeScript class definition in the text editor window
+Press alt+shift+G for a quick selection pop-up
+Select the preferred function from the pop-up menu
+or
+
+Click on the little Eye-Icon in your statusbar
+Select the preferred function from the pop-up menu
+The generated method will be placed at the cursors position.
+
+******************************************************************************************
+
 instalação node 18 =>  https://techviewleo.com/how-to-install-node-js-18-lts-on-ubuntu/
 1) - sudo apt update && sudo apt upgrade
 2) - curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash -
@@ -6,9 +43,13 @@ instalação node 18 =>  https://techviewleo.com/how-to-install-node-js-18-lts-o
 5) - npm -v - versão do npm
 6) - atualizando npm => npm install -g npm@9.2.0
 
+******************************************************************************************
+
 instalando angular 13
 1) - npm i -g @angular/cli@13.0.0 --save
 2) - ng --version
+
+******************************************************************************************
 
 instalação do java => https://linuxhint.com/install-java-ubuntu-22-04/
 1) - sudo apt update
@@ -23,6 +64,7 @@ instalação do java => https://linuxhint.com/install-java-ubuntu-22-04/
             > EOF
 5) -  source /etc/profile.d/jdk18.sh
 
+******************************************************************************************
 
 EXECUTANDO DOCKERFILE
 1) - docker build -t "nome-da-aplicação"  =>  docker build -t upload-file-backend .  => NÃO PODE TER LETRAS MAIÚSCULAS

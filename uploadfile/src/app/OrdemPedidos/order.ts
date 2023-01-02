@@ -1,15 +1,21 @@
-import { Cliente } from "./cliente";
-import { OrderItem } from "./orderItem";
+import Cliente from "./cliente";
+import OrderItem from "./orderItem";
 import { OrderStatus } from "./orderStatus";
 
-export class Order{
 
-    date?: Date;
-    status!: OrderStatus;
-    cliente!: Cliente;
+export default class Order{
 
-    items?: Array<OrderItem>;
+    date: Date;
+    status: OrderStatus;
+    cliente: Cliente;
 
-    constructor(){}
-    
+    items: Array<OrderItem>;
+
+    constructor( date:Date, status:any, cliente:any, items:any ){
+        this.items=items
+        this.date=date
+        this.status=status
+        this.cliente=cliente
+    }
+
 }
