@@ -18,16 +18,16 @@ export class BruteForceAlgorithmComponent implements OnInit {
     [ 1, 4, 7, 7 ] 
   ];
   n = this.N;
-  k = 3; // Number of arrays  
+  k = 4; // Number of arrays  
   output = new Array(this.n * this.k); // Output array
 
-  merge_and_sort(output: any, arr: any, n: any, k: any){
+  merge_and_sort(output: any, arr: any, n: any, k: any): any{
     for ( let i=0; i<k; i++ ){
       console.log("primeiro for >>> ",i)
       for ( let j=0; j<n; j++ ){
-        //console.log("segundo for >>> ",j)
+        console.log("segundo for >>> ",j)
         output[i * n+j] = arr[i][j];
-        //console.log("recebendo i + j, no output >>> ", output)
+        console.log("recebendo i + j, no output >>> ", output)
       }
       //return this.merge_and_sort(this.output, this.arr, this.n, this.k);
     }
@@ -38,8 +38,8 @@ export class BruteForceAlgorithmComponent implements OnInit {
 
   func(){
       for (let i = 0; i < this.n * this.k; i++){
-        //console.log(this.output[i] + " ")
-        document.write(this.output[i] + " ");
+        console.log(this.output[i] + " ")
+        //document.write(this.output[i] + " ");
       }
   }
         
