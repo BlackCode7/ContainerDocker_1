@@ -3,13 +3,11 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-function-merge-two-arrays',
   templateUrl: './function-merge-two-arrays.component.html',
-  styleUrls: []
+  styleUrls: ['./function-merge-two-arrays.component.css']
 })
 export class FunctionMergeTwoArraysComponent implements OnInit {
 
   constructor() { }
-
-
 
   array_1 = [12, 14, 2]
   array_2 = [ 33, 77, "lkjlj",65 ]
@@ -45,43 +43,43 @@ export class FunctionMergeTwoArraysComponent implements OnInit {
   }
 
 
-  // Driver Code Input arrays
-  arr = [ [ 3, 13 ],
-          [ 8, 10, 11 ],
-          [ 9, 15 ]
-        ];
+  // // Driver Code Input arrays
+  // arr = [ [ 3, 13 ],
+  //         [ 8, 10, 11 ],
+  //         [ 9, 15 ]
+  //       ];
 
-  mergeArrays(arr: any) {
-    // 2D-array para armazenar os resultados de um passo temporariamente
-    let arr_s: any[] = [];
-    // Loop para fazer pares de arrays e mesclá-los
-    while ( arr.length != 1 ){
-      // Limpa os dados que estejam previamente guardados na variável
-      arr_s = [];
-      console.log(arr_s)      
-      for( let i = 0; i < arr.length; i += 2 ){
-        if( i == arr.length - 1 ){
-          arr_s.push( arr[i] );
-          console.log(arr_s)
-        } else {
-          arr_s.push( this.mergeTwoArray( arr[i], arr[i + 1] ) );
-          console.log(arr_s)
-        }
-        arr = arr_s;
-        console.log(arr)
-      }
-      return arr[0];
-    }
-  }
+  // mergeArrays(arr: any) {
+  //   // 2D-array para armazenar os resultados de um passo temporariamente
+  //   let arr_s: any[] = [];
+  //   // Loop para fazer pares de arrays e mesclá-los
+  //   while ( arr.length != 1 ){
+  //     // Limpa os dados que estejam previamente guardados na variável
+  //     arr_s = [];
+  //     console.log(arr_s)      
+  //     for( let i = 0; i < arr.length; i += 2 ){
+  //       if( i == arr.length - 1 ){
+  //         arr_s.push( arr[i] );
+  //         console.log(arr_s)
+  //       } else {
+  //         arr_s.push( this.mergeTwoArray( arr[i], arr[i + 1] ) );
+  //         console.log(arr_s)
+  //       }
+  //       arr = arr_s;
+  //       console.log(arr)
+  //     }
+  //     return arr[0];
+  //   }
+  // }
 
-  funct(){
-      // Merged sorted array
-      const output = this.mergeArrays(this.arr);
+  // funct(){
+  //     // Merged sorted array
+  //     const output = this.mergeArrays(this.arr);
 
-      for (let i = 0; i < output.length; i++){
-          document.write(output[i] + " ");
-      }  
-  }
+  //     for (let i = 0; i < output.length; i++){
+  //         document.write(output[i] + " ");
+  //     }  
+  // }
 
 
 }
