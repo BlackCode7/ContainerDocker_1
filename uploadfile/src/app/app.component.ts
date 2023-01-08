@@ -13,10 +13,8 @@ export class AppComponent implements OnInit{
   title = 'uploadfile';
   constructor(){}
   ngOnInit(){
-
     console.log(this.orderItem)
     console.log(this.arrayObject)
-
   }
 
   public date = new Date();
@@ -35,7 +33,11 @@ export class AppComponent implements OnInit{
     return arrays
   })
 
-
+/*  Controlando *ngIf */
+paragrafoOFF = false
+paragrafoOFFPrintHide(){
+  this.paragrafoOFF = true
+}
 
 
 

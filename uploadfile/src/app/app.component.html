@@ -12,9 +12,15 @@
 
     <!-- <p>{{ orderItem }}</p> -->
    
-
-
-
+<div >
+    <p *ngIf="paragrafoOFF" style="background: red;">Paragrafo _ 1</p>
+    <p *ngIf="!paragrafoOFF" style="background: blue;">Paragrafo _ 2</p>
+</div>
+<button (click)="paragrafoOFFPrintHide()">Login</button>
+<br>
+<hr>
+<br>
+<app-brute-force-algorithm></app-brute-force-algorithm>
 
 
 

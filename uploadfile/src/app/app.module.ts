@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BruteForceAlgorithmComponent } from './brute-force-algorithm/brute-force-algorithm.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BruteForceAlgorithmComponent
   ],
   imports: [
     BrowserModule,
