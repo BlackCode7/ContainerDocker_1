@@ -14,10 +14,10 @@ export class CoinChangeBFSapproachComponent implements OnInit {
    * imprima -1.
    * 
    * Abordagem: Já vimos como resolver este problema usando a abordagem de programação dinâmica neste artigo.
-   * Aqueueui, veremos uma abordagem ligeiramente diferente para resolver esse problema usando o BFS.
-   * Antes disso, vamos definir um estado. Um estado SX pode ser definido como o número mínimo de inteiros queueue 
+   * Aqui, veremos uma abordagem ligeiramente diferente para resolver esse problema usando o BFS.
+   * Antes disso, vamos definir um estado. Um estado SX pode ser definido como o número mínimo de inteiros que 
    * precisaríamos tirar do array para obter um total de X. Agora, se começarmos a olhar para cada estado como 
-   * um nó em um gráfico de modo queueue cada nó esteja conectado a (SX – array[0], SX – array[1], … SX – array[numero – 1]).
+   * um nó em um gráfico de modo que cada nó esteja conectado a (SX – array[0], SX – array[1], … SX – array[numero – 1]).
    * Assim, temos queueue encontrar o caminho mais curto do estado numero para 0 em um não ponderado e isso pode ser feito 
    * usando BFS. BFS funciona aqueueui porqueueue o gráfico não é ponderado. Abaixo está a implementação da abordagem acima:1 
    * 
@@ -45,7 +45,7 @@ export class CoinChangeBFSapproachComponent implements OnInit {
 
   // Javascript implementation of the approach 
   // Function to find the minimum number of integers requeueuired
-
+  @funcDecorator1()
   findMinimumNumbers( x: any, array: any, numero: any ): any{
     let queue: any = []; // queueueue para BFS
 
@@ -85,3 +85,7 @@ export class CoinChangeBFSapproachComponent implements OnInit {
 
 
 }
+function funcDecorator1(): any{
+  throw new Error('Function not implemented.');
+}
+
